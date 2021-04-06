@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "a32a81f0-fa38-4267-aaff-699355d24ace",
+		"name": "HotelDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"name\":\"Room-E\",\r\n    \"description\":\"About E\",\r\n    \"availablity\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{LOCAL}}/addRoom"
+			},
+			"response": []
+		},
+		{
+			"name": "updateRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5,\r\n    \"name\":\"Room-E\",\r\n    \"description\":\"About E\",\r\n    \"availablity\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{LOCAL}}/updateRoom"
+			},
+			"response": []
+		},
+		{
+			"name": "ViewAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{LOCAL}}/display"
+			},
+			"response": []
+		},
+		{
+			"name": "filter By Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{LOCAL}}/filter/Room-A"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{LOCAL}}/delete/5"
+			},
+			"response": []
+		}
+	]
+}
